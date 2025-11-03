@@ -44,8 +44,8 @@ The server will start at:
 | :------- | :---------------------------------- | :----------------------------- |
 | **POST** | `/auth/register`                    | Register new user              |
 | **POST** | `/auth/login`                       | User login                     |
-| **GET**  | `/infouser/information/getUser/:id` | Get user information by ID     |
-| **GET**  | `/infouser/information/getUser`     | Get All user information       |
+| **GET**  | `/information/getUser/:id`          | Get user information by ID     |
+| **GET**  | `/information/getUser`              | Get All user information       |
 
 
 
