@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d5d5d5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 50px;
+}
+/* ------- */
+.container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 550px;
+}
+/* ------- */
+h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/* ------- */
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+.col-1 { flex: 2; }
+.col-2 { flex: 1; }
+.col-3 { flex: 0.5; }
+.col-4, .col-5 { flex: 1; }
+.col-6, .col-7 { flex: 1; }
+.col-8, .col-9 { flex: 1; }
+.col-10, .col-11, .col-12 { flex: 1; }
+.col-13, .col-14 { flex: 1; }
+
+#user-type{
+    width: 30%;
+}
+#postal-code {
+  width: 50%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}

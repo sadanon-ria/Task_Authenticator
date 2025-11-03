@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infomation User</title>
+    <link rel="stylesheet" href="/css/info.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ข้อมูลสมาชิก</h1>
+
+        <form class="info-form">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" id="username" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="user-type">ประเภท</label>
+                <input type="text" id="user-type" readonly>
+            </div>
+
+            <!-- address -->
+            <div class="form-row">
+                <div class="form-group col-1">
+                    <label for="full-name">ชื่อ-สกุล/ชื่อบริษัท</label> 
+                    <input type="text" id="full-name" name="full-name" required> 
+                </div>
+                <div class="form-group col-2">
+                    <label for="address-no">ที่อยู่เลขที่</label> 
+                    <input type="text" id="address-no" name="address-no" required> 
+                </div>
+                <div class="form-group col-3">
+                    <label for="address-moo">หมู่</label> 
+                    <input type="text" id="address-moo" name="address-moo"> 
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-4">
+                    <label for="address-village">หมู่บ้าน/อาคาร</label> 
+                    <input type="text" id="address-village" name="address-village"> 
+                </div>
+                <div class="form-group col-5">
+                    <label for="address-soi">ซอย</label> 
+                    <input type="text" id="address-soi" name="address-soi"> 
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-6">
+                    <label for="address-road">ถนน</label> 
+                    <input type="text" id="address-road" name="address-road" required> 
+                </div>
+                <div class="form-group col-7">
+                    <label for="subdistrict">ตำบล/แขวง</label> 
+                    <input type="text" id="subdistrict" name="subdistrict" required> 
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-8">
+                    <label for="district">อำเภอ/เขต</label> 
+                    <input type="text" id="district" name="district" required> 
+                </div>
+                <div class="form-group col-9">
+                    <label for="province">จังหวัด</label> 
+                    <input type="text" id="province" name="province" required> 
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="postal-code">รหัสไปรษณีย์</label> 
+                <input type="text" id="postal-code" name="postal-code" required> 
+            </div>
+
+            <div class="form-row">
+                <!-- ผู้ติดต่อ -->
+                <div class="form-group col-10">
+                    <label for="contact-title">คำนำหน้า</label>
+                    <input type="text" id="contact-title" readonly>
+                </div>
+                <div class="form-group col-11">
+                    <label for="contact-firstname">ชื่อผู้ติดต่อ</label> 
+                    <input type="text" id="contact-firstname" name="contact-firstname" required> 
+                </div>
+                <div class="form-group col-12">
+                    <label for="contact-lastname">สกุลผู้ติดต่อ</label> 
+                    <input type="text" id="contact-lastname" name="contact-lastname" required> 
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="contact-phone">เบอร์โทรศัพท์</label> 
+                    <input type="tel" id="contact-phone" name="contact-phone" required> 
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">อีเมล</label> 
+                    <input type="email" id="contact-email" name="contact-email" required> 
+                </div>
+                <div class="form-group">
+                    <label for="ref-code">โค้ดแนะนำ (REF)</label> 
+                    <input type="text" id="ref-code" name="ref-code"> 
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <button type="button" id="btn-logout" class="btn-logout col-13">ออกจากระบบ</button>           
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="javascript/infoJS.js"></script>
+        </form>
+    </div>
+</body>
+</html>
