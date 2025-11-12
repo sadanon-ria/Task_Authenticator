@@ -74,7 +74,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         }).then((result) => {
             if(result.isConfirmed){
                 localStorage.removeItem("token");
-                localStorage.removeItem("userId");
+                localStorage.removeItem("userID");
             
                 window.location.href = `/`;
             }
